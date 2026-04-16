@@ -1,5 +1,14 @@
 #  Taller Grupal: Ejercicios de Casos de Uso
 
+##  Fecha
+
+16 de abril de 2026
+
+##  Integrantes
+
+* Anthony Godoy
+* Adrian Guaman
+* Byron Vargas
 ---
 
 ## 1️. Sistema de Biblioteca
