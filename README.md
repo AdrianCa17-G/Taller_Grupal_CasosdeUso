@@ -264,7 +264,7 @@ Permite crear y reservar eventos.
 
 ###  Diagrama
 
-![Eventos](eventos.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_eventos.jpg)
 
 ---
 
@@ -291,7 +291,7 @@ Control de usuarios y rutinas.
 
 ###  Diagrama
 
-![Gimnasio](gimnasio.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_gimnasio.jpg)
 
 ---
 
@@ -320,6 +320,6 @@ Aplicación para reservar tours.
 
 ###  Diagrama
 
-![Turismo](turismo.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_turismo.jpg)
 
 ---
