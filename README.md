@@ -36,7 +36,7 @@ Sistema para gestionar préstamos de libros.
 
 ###  Diagrama
 
-![Sistema Biblioteca](biblioteca.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/uml_biblioteca.png)
 
 ---
 
@@ -66,7 +66,7 @@ Permite a los usuarios comprar productos en línea.
 
 ###  Diagrama
 
-![Tienda Online](tienda.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/uml_tienda_online.png)
 
 ---
 
@@ -95,7 +95,7 @@ Aplicación de mensajería tipo WhatsApp.
 
 ###  Diagrama
 
-![Sistema Chat](chat.png)
+![]([chat.png](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_chat.png))
 
 ---
 
@@ -126,7 +126,7 @@ Permite reservar habitaciones.
 
 ###  Diagrama
 
-![Sistema Hotel](hotel.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_hotel.png)
 
 ---
 
@@ -153,7 +153,7 @@ Gestión de estudiantes y docentes.
 
 ###  Diagrama
 
-![Sistema Académico](academico.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_academico.jpg)
 
 ---
 
@@ -181,7 +181,7 @@ Permite realizar operaciones bancarias.
 
 ###  Diagrama
 
-![Cajero Automático](cajero.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_cajero.jpg)
 
 ---
 
@@ -210,7 +210,7 @@ Aplicación para pedir comida.
 
 ###  Diagrama
 
-![Delivery](delivery.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_delivery.jpg)
 
 ---
 
