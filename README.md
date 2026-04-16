@@ -36,7 +36,7 @@ Sistema para gestionar préstamos de libros.
 
 ###  Diagrama
 
-![Sistema Biblioteca](biblioteca.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/uml_biblioteca.png)
 
 ---
 
@@ -66,7 +66,7 @@ Permite a los usuarios comprar productos en línea.
 
 ###  Diagrama
 
-![Tienda Online](tienda.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/uml_tienda_online.png)
 
 ---
 
@@ -95,7 +95,7 @@ Aplicación de mensajería tipo WhatsApp.
 
 ###  Diagrama
 
-![Sistema Chat](chat.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_chat.png)
 
 ---
 
@@ -126,7 +126,7 @@ Permite reservar habitaciones.
 
 ###  Diagrama
 
-![Sistema Hotel](hotel.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_hotel.png)
 
 ---
 
@@ -143,17 +143,20 @@ Gestión de estudiantes y docentes.
 
 ###  Casos de uso
 
+* Autenticarse
 * Registrar notas
 * Ver calificaciones
-* Consultar materias
+* Generar reporte de notas
 
 ###  Relaciones
 
-* **<<include>>**: Registrar notas → Consultar materias
+* **<<include>>**: Autenticarse → Registrar notas  
+* **<<include>>**: Autenticarse → Ver calificaciones
+* **<<extende>>**: Registrar notas → Generar reporte de notas
 
 ###  Diagrama
 
-![Sistema Académico](academico.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_academico.jpg)
 
 ---
 
@@ -161,27 +164,51 @@ Gestión de estudiantes y docentes.
 
 ###  Contexto
 
-Permite realizar operaciones bancarias.
+Permite realizar operaciones bancarias como retiro de dinero y consulta de saldo mediante validación del usuario.
 
 ###  Actores
 
-* Usuario
-* Sistema bancario
+* Cliente
+* Banco (Sistema Central)
 
 ###  Casos de uso
 
+* Insertar tarjeta
 * Validar PIN
-* Consultar saldo
+* Verificar cuenta en banco
+* Seleccionar operación
 * Retirar dinero
+* Consultar saldo
+* Verificar fondos
+* Registrar transacción
+* Dispensar efectivo
+* Mostrar saldo en pantalla
+* Imprimir comprobante
+* Bloquear tarjeta
 
 ###  Relaciones
 
-* **<<include>>**: Retirar dinero → Validar PIN
-* **<<include>>**: Consultar saldo → Validar PIN
+* **<<include>>**:
+
+  * Insertar tarjeta → Validar PIN
+  * Validar PIN → Verificar cuenta en banco
+  * Verificar cuenta en banco → Seleccionar operación
+  * Seleccionar operación → Retirar dinero
+  * Seleccionar operación → Consultar saldo
+  * Retirar dinero → Verificar fondos
+  * Retirar dinero → Registrar transacción
+  * Consultar saldo → Registrar transacción
+  * Verificar fondos → Dispensar efectivo
+  * Registrar transacción → Mostrar saldo en pantalla
+  * Mostrar saldo en pantalla → Imprimir comprobante
+
+* **<<extend>>**:
+
+  * Bloquear tarjeta → Validar PIN (cuando el PIN es incorrecto múltiples veces)
 
 ###  Diagrama
 
-![Cajero Automático](cajero.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_cajero.jpg)
 
 ---
 
@@ -210,7 +237,7 @@ Aplicación para pedir comida.
 
 ###  Diagrama
 
-![Delivery](delivery.png)
+![](https://github.com/AdrianCa17-G/Taller_Grupal_CasosdeUso/blob/main/Casos%20de%20Uso%20UML/diagrama_uml_delivery.jpg)
 
 ---
 
