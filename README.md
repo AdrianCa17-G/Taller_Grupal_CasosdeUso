@@ -216,24 +216,56 @@ Permite realizar operaciones bancarias como retiro de dinero y consulta de saldo
 
 ###  Contexto
 
-Aplicación para pedir comida.
+Aplicación para gestionar pedidos de comida, desde la selección del producto hasta la entrega al cliente.
 
 ###  Actores
 
 * Cliente
 * Repartidor
 * Restaurante
+* Sistema de Pago
 
 ###  Casos de uso
 
+* Registrarse / Iniciar sesión
+* Validar usuario
+* Buscar restaurantes
+* Ver menú
+* Agregar al carrito
 * Realizar pedido
+* Aplicar descuento
+* Confirmar disponibilidad
+* Generar notificación
+* Registrar transacción
+* Realizar pago
+* Calcular ruta óptima
+* Aceptar / Rechazar pedido
 * Preparar pedido
+* Asignar repartidor
+* Actualizar estado del pedido
 * Entregar pedido
-* Pagar pedido
+* Gestionar menú
+* Calificar servicio
 
 ###  Relaciones
 
-* **<<include>>**: Realizar pedido → Pagar pedido
+* **<<include>>**:
+
+  * Registrarse/Iniciar sesión → Validar usuario
+  * Realizar pedido → Confirmar disponibilidad
+  * Realizar pedido → Generar notificación
+  * Realizar pedido → Registrar transacción
+  * Realizar pago → Registrar transacción
+  * Aceptar/Rechazar pedido → Preparar pedido
+  * Preparar pedido → Asignar repartidor
+  * Asignar repartidor → Actualizar estado del pedido
+  * Actualizar estado del pedido → Entregar pedido
+
+* **<<extend>>**:
+
+  * Aplicar descuento → Realizar pedido
+  * Calcular ruta óptima → Entregar pedido
+  * Calificar servicio → Entregar pedido
 
 ###  Diagrama
 
@@ -245,22 +277,31 @@ Aplicación para pedir comida.
 
 ###  Contexto
 
-Permite crear y reservar eventos.
+Permite crear eventos y gestionar la compra de entradas por parte de los usuarios.
 
 ###  Actores
 
+* Cliente
 * Organizador
-* Usuario
+* Sistema de pagos
 
 ###  Casos de uso
 
 * Crear evento
-* Publicar evento
+* Definir detalles del evento
+* Establecer capacidad máxima
+* Seleccionar evento
 * Comprar ticket
+* Procesar pago
 
 ###  Relaciones
 
-* **<<include>>**: Comprar ticket → Validar disponibilidad
+* **<<include>>**:
+
+  * Crear evento → Definir detalles del evento
+  * Crear evento → Establecer capacidad máxima
+  * Comprar ticket → Seleccionar evento
+  * Comprar ticket → Procesar pago
 
 ###  Diagrama
 
@@ -272,22 +313,33 @@ Permite crear y reservar eventos.
 
 ###  Contexto
 
-Control de usuarios y rutinas.
+Sistema para gestionar la inscripción de usuarios y el control de asistencia en el gimnasio.
 
 ###  Actores
 
-* Usuario
-* Entrenador
+* Cliente
+* Administrador
 
 ###  Casos de uso
 
 * Inscribirse
+* Registrar datos personales
+* Realizar pago
 * Registrar asistencia
-* Asignar rutina
+* Validar membresía
+* Informar deuda
 
 ###  Relaciones
 
-* **<<include>>**: Registrar asistencia → Validar membresía
+* **<<include>>**:
+
+  * Inscribirse → Registrar datos personales
+  * Inscribirse → Realizar pago
+  * Registrar asistencia → Validar membresía
+
+* **<<extend>>**:
+
+  * Informar deuda → Validar membresía (cuando la membresía ha caducado)
 
 ###  Diagrama
 
