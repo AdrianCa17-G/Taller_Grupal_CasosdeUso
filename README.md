@@ -1,19 +1,19 @@
-# 📘 Taller Grupal: Ejercicios de Casos de Uso
+#  Taller Grupal: Ejercicios de Casos de Uso
 
 ---
 
-## 1️⃣ Sistema de Biblioteca
+## 1️. Sistema de Biblioteca
 
-### 📌 Contexto
+###  Contexto
 
 Sistema para gestionar préstamos de libros.
 
-### 👤 Actores
+###  Actores
 
 * Usuario
 * Bibliotecario
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Registrar usuario
 * Buscar libro
@@ -21,28 +21,28 @@ Sistema para gestionar préstamos de libros.
 * Prestar libro
 * Devolver libro
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Prestar libro → Consultar disponibilidad
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Sistema Biblioteca](biblioteca.png)
 
 ---
 
-## 2️⃣ Sistema de Tienda Online
+## 2. Sistema de Tienda Online
 
-### 📌 Contexto
+###  Contexto
 
 Permite a los usuarios comprar productos en línea.
 
-### 👤 Actores
+###  Actores
 
 * Cliente
 * Sistema de pagos
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Ver productos
 * Agregar al carrito
@@ -50,58 +50,58 @@ Permite a los usuarios comprar productos en línea.
 * Pagar
 * Aplicar descuento
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Realizar compra → Pagar
 * **<<extend>>**: Aplicar descuento → Realizar compra
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Tienda Online](tienda.png)
 
 ---
 
-## 3️⃣ Sistema de Chat
+## 3. Sistema de Chat
 
-### 📌 Contexto
+###  Contexto
 
 Aplicación de mensajería tipo WhatsApp.
 
-### 👤 Actores
+###  Actores
 
 * Usuario
 * Sistema de notificaciones
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Iniciar sesión
 * Enviar mensaje
 * Recibir mensaje
 * Ver notificaciones
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Enviar mensaje → Iniciar sesión
 * **<<extend>>**: Ver notificaciones → Recibir mensaje
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Sistema Chat](chat.png)
 
 ---
 
-## 4️⃣ Sistema de Reservas de Hotel
+## 4. Sistema de Reservas de Hotel
 
-### 📌 Contexto
+###  Contexto
 
 Permite reservar habitaciones.
 
-### 👤 Actores
+###  Actores
 
 * Cliente
 * Recepcionista
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Buscar habitación
 * Consultar disponibilidad
@@ -110,187 +110,180 @@ Permite reservar habitaciones.
 * Confirmar reserva
 * Realizar pago
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Reservar habitación → Consultar disponibilidad
 * **<<include>>**: Reservar habitación → Realizar pago
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Sistema Hotel](hotel.png)
 
 ---
 
-## 5️⃣ Sistema Académico
+## 5. Sistema Académico
 
-### 📌 Contexto
+###  Contexto
 
 Gestión de estudiantes y docentes.
 
-### 👤 Actores
+###  Actores
 
 * Docente
 * Estudiante
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Registrar notas
 * Ver calificaciones
 * Consultar materias
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Registrar notas → Consultar materias
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Sistema Académico](academico.png)
 
 ---
 
-## 6️⃣ Sistema de Cajero Automático
+## 6. Sistema de Cajero Automático
 
-### 📌 Contexto
+###  Contexto
 
 Permite realizar operaciones bancarias.
 
-### 👤 Actores
+###  Actores
 
 * Usuario
 * Sistema bancario
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Validar PIN
 * Consultar saldo
 * Retirar dinero
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Retirar dinero → Validar PIN
 * **<<include>>**: Consultar saldo → Validar PIN
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Cajero Automático](cajero.png)
 
 ---
 
-## 7️⃣ Sistema de Delivery
+## 7. Sistema de Delivery
 
-### 📌 Contexto
+###  Contexto
 
 Aplicación para pedir comida.
 
-### 👤 Actores
+###  Actores
 
 * Cliente
 * Repartidor
 * Restaurante
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Realizar pedido
 * Preparar pedido
 * Entregar pedido
 * Pagar pedido
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Realizar pedido → Pagar pedido
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Delivery](delivery.png)
 
 ---
 
-## 8️⃣ Sistema de Gestión de Eventos
+## 8. Sistema de Gestión de Eventos
 
-### 📌 Contexto
+###  Contexto
 
 Permite crear y reservar eventos.
 
-### 👤 Actores
+###  Actores
 
 * Organizador
 * Usuario
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Crear evento
 * Publicar evento
 * Comprar ticket
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Comprar ticket → Validar disponibilidad
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Eventos](eventos.png)
 
 ---
 
-## 9️⃣ Sistema de Gimnasio
+## 9. Sistema de Gimnasio
 
-### 📌 Contexto
+###  Contexto
 
 Control de usuarios y rutinas.
 
-### 👤 Actores
+###  Actores
 
 * Usuario
 * Entrenador
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Inscribirse
 * Registrar asistencia
 * Asignar rutina
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Registrar asistencia → Validar membresía
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Gimnasio](gimnasio.png)
 
 ---
 
-## 🔟 Sistema de Turismo
+## 10. Sistema de Turismo
 
-### 📌 Contexto
+###  Contexto
 
 Aplicación para reservar tours.
 
-### 👤 Actores
+###  Actores
 
 * Cliente
 * Agencia
 
-### ⚙️ Casos de uso
+###  Casos de uso
 
 * Buscar destinos
 * Reservar tour
 * Pagar
 * Confirmar reserva
 
-### 🔗 Relaciones
+###  Relaciones
 
 * **<<include>>**: Reservar tour → Pagar
 * **<<extend>>**: Confirmar reserva → Reservar tour
 
-### 🖼️ Diagrama
+###  Diagrama
 
 ![Turismo](turismo.png)
 
 ---
-
-## ✅ Requisitos cumplidos
-
-* ✔️ Identificación de actores
-* ✔️ Definición de casos de uso
-* ✔️ Uso de relaciones <<include>> y <<extend>>
-* ✔️ Representación gráfica mediante diagramas UML
