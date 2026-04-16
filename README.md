@@ -143,13 +143,16 @@ Gestión de estudiantes y docentes.
 
 ###  Casos de uso
 
+* Autenticarse
 * Registrar notas
 * Ver calificaciones
-* Consultar materias
+* Generar reporte de notas
 
 ###  Relaciones
 
-* **<<include>>**: Registrar notas → Consultar materias
+* **<<include>>**: Autenticarse → Registrar notas  
+* **<<include>>**: Autenticarse → Ver calificaciones
+* **<<extende>>**: Registrar notas → Generar reporte de notas
 
 ###  Diagrama
 
@@ -161,23 +164,47 @@ Gestión de estudiantes y docentes.
 
 ###  Contexto
 
-Permite realizar operaciones bancarias.
+Permite realizar operaciones bancarias como retiro de dinero y consulta de saldo mediante validación del usuario.
 
 ###  Actores
 
-* Usuario
-* Sistema bancario
+* Cliente
+* Banco (Sistema Central)
 
 ###  Casos de uso
 
+* Insertar tarjeta
 * Validar PIN
-* Consultar saldo
+* Verificar cuenta en banco
+* Seleccionar operación
 * Retirar dinero
+* Consultar saldo
+* Verificar fondos
+* Registrar transacción
+* Dispensar efectivo
+* Mostrar saldo en pantalla
+* Imprimir comprobante
+* Bloquear tarjeta
 
 ###  Relaciones
 
-* **<<include>>**: Retirar dinero → Validar PIN
-* **<<include>>**: Consultar saldo → Validar PIN
+* **<<include>>**:
+
+  * Insertar tarjeta → Validar PIN
+  * Validar PIN → Verificar cuenta en banco
+  * Verificar cuenta en banco → Seleccionar operación
+  * Seleccionar operación → Retirar dinero
+  * Seleccionar operación → Consultar saldo
+  * Retirar dinero → Verificar fondos
+  * Retirar dinero → Registrar transacción
+  * Consultar saldo → Registrar transacción
+  * Verificar fondos → Dispensar efectivo
+  * Registrar transacción → Mostrar saldo en pantalla
+  * Mostrar saldo en pantalla → Imprimir comprobante
+
+* **<<extend>>**:
+
+  * Bloquear tarjeta → Validar PIN (cuando el PIN es incorrecto múltiples veces)
 
 ###  Diagrama
 
